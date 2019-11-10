@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="vue-resource.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="box">
+			{{c}}
+			<input type="text" name="" id="" value="" placeholder="edit me" v-model="e"/>
+			<div id="" v-text="b">
+				
+			</div>
+			<div id="" v-html="a">
+				
+			</div>
+			<div id="" v-for="i in d">
+				{{i}}
+			</div>
+			<div id="">
+				{{e}}
+			</div>
+			<div id="" v-bind:href="a">
+				djkllllll
+			</div>
+		</div>
+		<script type="text/javascript">
+			var ccc = new Vue({
+				el:"#box",
+				data:{
+					a:'<span>你是我爷爷</span>',
+					b:'<span>我是你爸爸</span>',
+					c:12,
+					d:[23,34,15],
+					e:'你保护世界，我保护你'
+				}
+			})
+		</script>
+	</body>
+</html>

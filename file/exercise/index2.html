@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="vue-resource.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--多选框对应数组-->
+		<div id="box">
+			<input type="checkbox" name="" id="" value="apple" v-model="fruit"/>苹果
+			<input type="checkbox" name="" id="" value="orange" v-model="fruit"/>橘子
+			<input type="checkbox" name="" id="" value="grape" v-model="fruit"/>葡萄
+			<div id="">
+				{{fruit}}
+			</div>
+		<!--下拉框-->	
+			<select name="" id="" v-model="str">
+				<option value="souhu" v-model="str">搜狐</option>
+				<option value="baidu" v-model="str">百度</option>
+				<option value="xinlang" v-model="str">新浪</option>
+			</select>
+			<div id="">
+				{{str}}
+			</div>
+			<select name="" id="" v-model="input">
+				<option value="0">百度</option>
+				<option value="1">谷歌</option>
+			</select>
+			<div id="" v-if="input==0">
+				<input type="text" name="" id="" value="" />
+				<button>百度一下</button>
+			</div>
+			<div id="" v-if="input==1">
+				<input type="text" name="" id="" value="" />
+				<button>谷歌搜索</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:'#box',
+				data:{
+					fruit:[],
+					str:'',
+					input:0
+					
+				}
+			})
+		</script>
+	</body>
+</html>
