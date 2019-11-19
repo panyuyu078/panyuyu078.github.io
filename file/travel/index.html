@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css" />
+		<script src="dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>
+									<div class="swiper-slide">
+										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" />
+									</div>
+									<div class="swiper-slide">
+										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" />
+									</div>
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>-->
+		<div id="box">
+			<div class="g_container">
+				<!--导航-->
+				<div class="g_banner">
+					<div class="g_banner_center">
+						<div class="g_banner_l">
+							<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzM0MDdjY2U4MDk5MTljNjZhZmNjZDYxMWJkNTIxZDkucG5n.png" />
+						</div>
+						<div class="g_banner_nav clearfix">
+							<ul class="clearfix" style="color: #000;">
+								<li>
+									<a href="#/">首页</a>
+								</li>
+								<li>
+									<a href="#/no2">关于</a>
+								</li>
+								<li>
+									<a href="#/no3">路线</a>
+								</li>
+								<li>
+									<a href="#/no4">攻略</a>
+								</li>
+								<li>
+									<a href="#/no5">联系</a>
+								</li>
+								<li><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZGE4MWFlMzI1NjNiMWNhM2M1NjJlNGYyYjBmYjU5ZDEtMjN4MTUucG5n.png" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="g_content">
+					<router-view></router-view>
+				</div>
+			</div>
+		</div>
+		<template id="no1">
+			<div id="">
+				<lee :boxs='arr'></lee>
+				<div class="box_lunbotuparent" style="display: flex;padding: 120px;">
+					<div class="box_lunboleft swiper-container" style="flex: 2;">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" v-for="(i,$index) in arr">
+								<img :src="i" />
+								<p style="color:#13304a;font-size:20px;font-family:微软雅黑;font-weight:700;padding-top:45px;padding-bottom:4px;">梵净山</p>
+								<p style="color:#379cf4;font-size:14px;font-family:verdana;padding:10px 0px 0px 0px;">Distance:4.3km　　Days:4</p>
+								<p style="color:#596e80;font-size:12px;font-family:微软雅黑;line-height:28px;padding-top:25px;">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案<br />和可视化图文内容编辑模式让...</p>
+							</div>
+						</div>
+					</div>
+					<div class="box_lunboturight" style="flex: 1;position: relative;">
+						<div class="" style="font-family:Oswald;font-size:36px;font-weight:bold;font-style:normal;color:#13304a;">
+							RECOMM
+						</div>
+						<div class="" style="font-size:14px;font-weight:normal;font-style:normal;color:#596e80;vertical-align:bottom;padding: 8px 0 0 2px;">
+							精选当季热门目的地 <span class="u_banner_lantiao"></span>
+						</div>
+						<div id="" style="font-size: 13px;color: rgb(19, 48, 74);letter-spacing: 1px; line-height: 30px;padding: 40px 0 0;">
+							偶尔为街头独特的风景驻足，偶尔因高山流水的美丽停留，偶尔被惊鸿一瞥的美丽吸引；或者在春暖花开时，或者在河边放下一盏写着心愿的河灯，祝愿一切安好。
+						</div>
+						<div class="swiper-button-prev">
+							<</div>
+								<div class="swiper-button-next">></div>
+						</div>
+					</div>
+				</div>
+		</template>
+		<template id="no2">
+			<div id="">
+				<lee2 x_title="ABOUT US"></lee2>
+				<div style="display: flex;padding: 100px;">
+					<span id="" style="font-family: 微软雅黑; color: rgb(89, 110, 128);flex: 1;line-height: 30px;font-size: 12px;display: inline-block;margin-right: 20px;">
+						当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户， 还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。
+					</span>
+					<span id="" style="font-family: 微软雅黑; color: rgb(89, 110, 128);flex: 1;line-height: 30px;font-size: 12px;display: inline-block;">
+						起飞页提供了海量精美网站模板和成品网站，几乎覆盖了当今各个行业，您只需在模板上进行少量修改，即可完成自己的网站，起飞页用户的最短建站时间纪录为30分钟。起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，支持打字传图，不需要专业编写代码，也没有其他建站工具的层叠式烦恼，您可以随心所欲创建区块、添加组件…
+					</span>
+					<div class="box_lunboleft2 swiper-container" style="flex: 1;">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" v-for="(i,$index) in arr">
+								<img :src="i" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<template id="no3">
+			<div id="">
+				<lee2 x_title="DESTINATION"></lee2>
+				three
+			</div>
+		</template>
+		<template id="no4">
+			<div id="">
+				<lee2 x_title="TRAVEL GUIDE"></lee2>
+				four
+			</div>
+		</template>
+		<template id="no5">
+			<div id="">
+				<lee2 x_title="CONTACT"></lee2>
+				<div style="width:1190px;height:400px;box-shadow:0 0 6px 2px #ccc; margin:100px auto" id="dituContent"></div>
+			</div>
+		</template>
+		<template id="lee">
+			<div>
+				<div class="u_banner_qyt clearfix">
+					<div class="u_banner_qytleft">
+						<h5>探索</h5>
+						<h5>山野秘境</h5>
+						<h5 style="margin-bottom: 100px;">发现纯粹自我</h5>
+						<p style="font-size: 13px;color: #fff;">背着背包的路上，听过许多故事，见过旅行风景<br /> 流转的时光，都成为命途中的点缀，
+							<br /> 不言不语都是好风景。
+							<br />
+							<br />
+							<span class="u_banner_qustom">CUSTOM</span>
+							<span class="u_banner_lantiao"></span>
+						</p>
+					</div>
+					<div class="u_banner_qytright">
+						<p class="qytrightitle">海拔</p>
+						<p class="qytrighcontent">1650m</p>
+						<p class="qytrightitle">路线</p>
+						<p class="qytrighcontent">7</p>
+						<p class="qytrightitle">游客/年</p>
+						<p class="qytrighcontent">3000+</p>
+						<div class="box_lunbotu swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" v-for="i in a">
+									<img :src="i" alt="" />
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<template id="lee2">
+			<div>
+				<div class="qfy_title_bg">
+					<div class="qfy_title" style="font-family:Oswald;font-size:32px;font-weight:normal;font-style:normal;color:#ffffff;">
+						{{title}}
+					</div>
+					<div class="qfy_cont">
+						<span class="qfy_contl" style="margin-right: 20px;color: #000;"></span> 背上行囊去远方，那个梦寐以求的目的地。
+						<span class="qfy_contr" style="margin-left: 20px;"></span>
+					</div>
+				</div>
+
+			</div>
+
+		</template>
+		<script src="vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="vue-router.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+		<script type="text/javascript">
+			Vue.component('lee', {
+				template: "#lee",
+				props: ['boxs'],
+				data() {
+					return {
+						a: this.boxs
+					}
+				}
+
+			})
+			Vue.component('lee2', {
+				template: "#lee2",
+				props: ['x_title'],
+				data() {
+					return {
+						title: this.x_title
+					}
+				}
+			})
+
+			var router = new VueRouter({
+				routes: [{
+					path: '/',
+					component: {
+						template: '#no1',
+						data() {
+							return {
+								arr: [
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg',
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNDAweDI5MC5qcGc_p_p100_p_3D.jpg',
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtNDAweDI5MC5qcGc_p_p100_p_3D.jpg',
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNDAweDI5MC5qcGc_p_p100_p_3D.jpg',
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctNDAweDI5MC5qcGc_p_p100_p_3D.jpg'
+								]
+							}
+						}
+					}
+				}, {
+					path: '/no2',
+					component: {
+						template: '#no2',
+						data() {
+							return {
+								arr: [
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg',
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNDAweDI5MC5qcGc_p_p100_p_3D.jpg',
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtNDAweDI5MC5qcGc_p_p100_p_3D.jpg',
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNDAweDI5MC5qcGc_p_p100_p_3D.jpg',
+									'https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctNDAweDI5MC5qcGc_p_p100_p_3D.jpg'
+								]
+							}
+						}
+					}
+				}, {
+					path: '/no3',
+					component: {
+						template: '#no3'
+					}
+				}, {
+					path: '/no4',
+					component: {
+						template: '#no4'
+					}
+				}, {
+					path: '/no5',
+					component: {
+						template: '#no5'
+					}
+				}]
+			})
+
+			new Vue({
+				el: "#box",
+				router: router,
+				data: {
+
+				}
+			})
+
+			//轮播
+			var mySwiper = new Swiper('.box_lunbotu', {
+				loop: true, 
+				slidesPerView: 2,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: '.u_banner_qytright .swiper-button-next',
+					prevEl: '.u_banner_qytright .swiper-button-prev',
+				},
+			})
+			var mySwiper = new Swiper('.box_lunboleft', {
+				loop: true, 
+				slidesPerView: 2,
+				spaceBetween: 10,
+				navigation: {
+					nextEl: '.box_lunbotuparent .swiper-button-next',
+					prevEl: '.box_lunbotuparent .swiper-button-prev',
+				},
+			})
+			var mySwiper = new Swiper('.box_lunboleft2', {
+				loop: true, 
+				slidesPerView: 1,
+
+			})
+			//地图
+			//创建和初始化地图函数：
+			function initMap() {
+				createMap(); //创建地图
+				setMapEvent(); //设置地图事件
+				addMapControl(); //向地图添加控件
+			}
+
+			//创建地图函数：
+			function createMap() {
+				var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+				var point = new BMap.Point(116.395645, 39.929986); //定义一个中心点坐标
+				map.centerAndZoom(point, 12); //设定地图的中心点和坐标并将地图显示在地图容器中
+				window.map = map; //将map变量存储在全局
+			}
+
+			//地图事件设置函数：
+			function setMapEvent() {
+				map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+				map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+				map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+				map.enableKeyboard(); //启用键盘上下左右键移动地图
+			}
+
+			//地图控件添加函数：
+			function addMapControl() {
+				//向地图中添加缩放控件
+				var ctrl_nav = new BMap.NavigationControl({
+					anchor: BMAP_ANCHOR_TOP_LEFT,
+					type: BMAP_NAVIGATION_CONTROL_LARGE
+				});
+				map.addControl(ctrl_nav);
+				//向地图中添加缩略图控件
+				var ctrl_ove = new BMap.OverviewMapControl({
+					anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+					isOpen: 1
+				});
+				map.addControl(ctrl_ove);
+				//向地图中添加比例尺控件
+				var ctrl_sca = new BMap.ScaleControl({
+					anchor: BMAP_ANCHOR_BOTTOM_LEFT
+				});
+				map.addControl(ctrl_sca);
+			}
+
+			initMap(); //创建和初始化地图
+		</script>
+	</body>
+
+</html>
