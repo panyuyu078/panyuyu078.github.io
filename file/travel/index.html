@@ -10,15 +10,7 @@
 	</head>
 
 	<body>
-		<!--<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>
-									<div class="swiper-slide">
-										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" />
-									</div>
-									<div class="swiper-slide">
-										<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYmNmMDU3ZWVmZDhlMjJjZmQxMWYzNGNiMzIzZjhhODAtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" />
-									</div>
-									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>
-									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctNDAweDI5MC5qcGc_p_p100_p_3D.jpg" /></div>-->
+		
 		<div id="box">
 			<div class="g_container">
 				<!--导航-->
@@ -27,7 +19,7 @@
 						<div class="g_banner_l">
 							<img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzM0MDdjY2U4MDk5MTljNjZhZmNjZDYxMWJkNTIxZDkucG5n.png" />
 						</div>
-						<div class="g_banner_nav clearfix">
+						<div class="g_banner_nav clearfix" id='g_banner_nav'>
 							<ul class="clearfix" style="color: #000;">
 								<li>
 									<a href="#/">首页</a>
@@ -51,6 +43,34 @@
 				</div>
 				<div class="g_content">
 					<router-view></router-view>
+				</div>
+				<div id="" slot="footer">
+					<div style="display: flex;background-color: #13304a;padding: 150px;">
+						<div style="flex: 1;">
+							<h5 style="font-family:Oswald;font-size:30px;font-weight:bold;font-style:normal;color:#ffffff;padding: 0 0 30px 0;">TRAVEL</h5>
+							<span style="font-size: 13px; color: rgb(204, 218, 225);">我公司会以安全、快乐、环保为理念，以敬业、诚信、善良<br />为本，期待与全国各地的户外公司、户外俱乐部、旅行社进行合作。</span>
+						</div>
+						<div style="flex: 1;">
+							<h5 style="font-family:Oswald;font-size:30px;font-weight:bold;font-style:normal;color:#ffffff;padding: 0 0 30px 0;">CONTACT</h5>
+							<sapn style="font-size: 13px; color: rgb(204, 218, 225);">深圳市南京路双港码头6楼</sapn><br />
+							<span style="font-size: 13px; color: rgb(204, 218, 225);">123@admin.com</span><br />
+							<span style="font-size: 13px; color: rgb(204, 218, 225);">011-555-12345</span>
+						</div>
+						<div style="flex: 1;">
+							<div style="padding: 0 0 30px 0;">
+								<span class="qfy_icon1"></span>
+								<span class="qfy_icon2"></span>
+								<span class="qfy_icon3"></span>
+								<span class="qfy_icon4"></span></div>
+							<div>
+								<span style="font-size: 13px; color: rgb(204, 218, 225);">
+								强大专业的户外产品汇集平台，为您提供徒步、登山、露营、摄影、航海、越野等多种方式探索大自然。
+
+								</span>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -83,6 +103,7 @@
 								<div class="swiper-button-next">></div>
 						</div>
 					</div>
+					<slot name="footer"></slot>
 				</div>
 		</template>
 		<template id="no2">
@@ -103,18 +124,19 @@
 						</div>
 					</div>
 				</div>
+				<slot name="footer"></slot>
 			</div>
 		</template>
 		<template id="no3">
 			<div id="">
 				<lee2 x_title="DESTINATION"></lee2>
-				three
+				<slot name="footer"></slot>
 			</div>
 		</template>
 		<template id="no4">
 			<div id="">
 				<lee2 x_title="TRAVEL GUIDE"></lee2>
-				four
+				<slot name="footer"></slot>
 			</div>
 		</template>
 		<template id="no5">
@@ -122,6 +144,7 @@
 				<lee2 x_title="CONTACT"></lee2>
 				<div style="width:1190px;height:400px;box-shadow:0 0 6px 2px #ccc; margin:100px auto" id="dituContent"></div>
 			</div>
+			<slot name="footer"></slot>
 		</template>
 		<template id="lee">
 			<div>
@@ -178,6 +201,7 @@
 		<script src="vue-router.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 		<script type="text/javascript">
+			
 			Vue.component('lee', {
 				template: "#lee",
 				props: ['boxs'],
@@ -259,7 +283,7 @@
 
 			//轮播
 			var mySwiper = new Swiper('.box_lunbotu', {
-				loop: true, 
+				loop: true,
 				slidesPerView: 2,
 				spaceBetween: 30,
 				navigation: {
@@ -268,7 +292,7 @@
 				},
 			})
 			var mySwiper = new Swiper('.box_lunboleft', {
-				loop: true, 
+				loop: true,
 				slidesPerView: 2,
 				spaceBetween: 10,
 				navigation: {
@@ -277,10 +301,12 @@
 				},
 			})
 			var mySwiper = new Swiper('.box_lunboleft2', {
-				loop: true, 
+				loop: true,
 				slidesPerView: 1,
 
 			})
+			
+			
 			//地图
 			//创建和初始化地图函数：
 			function initMap() {
